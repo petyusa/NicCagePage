@@ -109,10 +109,16 @@ addHeader('h3', 'A film részletei:', detailsDiv);
 
 var detailsUl = document.createElement('ul');
 
+addLi('Megjelent', thisMovie.release_date, detailsUl);
 addLi('Eredeti cím', thisMovie.original_title, detailsUl);
+addLi('Eredeti nyelv', getLanguageName(thisMovie.original_language), detailsUl);
+addLi('Műfaj', getArrayElements('genres').join(', '), detailsUl);
 addLi('Gyártó cégek', getArrayElements('production_companies').join(', '), detailsUl);
 addLi('Gyártó országok', getArrayElements('production_countries').join(', '), detailsUl);
-addLi('Műfaj', getArrayElements('genres').join(', '), detailsUl);
+addLi('Költségvetés', '$' + thisMovie.budget.toLocaleString(
+  'en-US', { minimumFractionDigits: 2 }), detailsUl);
+addLi('Bevétel', '$' + thisMovie.revenue.toLocaleString(
+  'en-US', { minimumFractionDigits: 2 }), detailsUl);
 addLi('Leírás', thisMovie.overview, detailsUl);
 
 displayMovieCreditsList('Szereplők', 'cast', 'name', 'character');
