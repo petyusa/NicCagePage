@@ -1,0 +1,83 @@
+    body { 
+                font-family: 'Open Sans', sans-serif;
+                font-size: 11pt;
+                }
+
+            #mainContainer{
+                width: 88%;
+                margin: 9vw auto;
+            }
+
+            .lenyiloElem h2 { 
+                margin: 0; 
+                font-size: 13pt; 
+                padding: 8px 16px; 
+                color: #fff; 
+                background-color: #d61838;
+                }
+            .lenyiloElem h2:hover { cursor: pointer; }
+            .lenyiloElem div { 
+                margin: 0; 
+                background-color: #eef; 
+                border-bottom: 1px solid #66d;  
+                height: 380px;
+                opacity: 1;
+                transition: height 0.75s ease-in-out, opacity  1.2s ease-in-out;
+                }
+
+            .lenyiloElem.hide h2 { color: #eee; background-color: #47144d; }
+
+            .lenyiloElem.hide div { 
+                height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: height 0.75s ease-in-out, opacity  1.2s ease-in-out;
+                }
+
+             img{
+                 height: 240px;
+                 float: left;
+                 padding-top: 15px;
+             }
+              .reszletek{
+                 float: left;
+                 width: 14%;
+                 position: relative;
+                 bottom: -215px;
+             }
+             .reszletekGomb{
+                background: #d61838;
+                color: #fff;
+                font-weight: bold;
+                padding: 10px 16px;
+             }
+             .reszletekGomb:hover{
+                cursor: pointer;
+                background: #b1132e;
+             }
+             table{
+                 float: left;
+                 width: 60%;
+                 overflow: hidden;
+                 padding: 15px 20px 15px 20px;
+             }
+             td:first-child{
+                 font-weight: bold;
+             }
+             td{
+                 padding: 4px;
+                 vertical-align: top;
+             }
+             .bovebb{
+                 overflow: hidden;  /*auto --csúszka*/
+             }
+             header{
+                width: 102%;
+                height: 250px;
+             }
+             header img{
+                  width: 100%;
+                  height: auto;
+                  margin: -30px 0 0 -8px; 
+             }
+            
