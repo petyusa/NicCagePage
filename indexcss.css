@@ -13,10 +13,10 @@
                 margin: 0; 
                 font-size: 13pt; 
                 padding: 8px 16px; 
-                color: #fff; 
+                color: #fff;
+				cursor: pointer;
                 background-color: #d61838;
                 }
-            .lenyiloElem h2:hover { cursor: pointer; }
             .lenyiloElem div { 
                 margin: 0; 
                 background-color: #eef; 
@@ -26,7 +26,8 @@
                 transition: height 0.75s ease-in-out, opacity  1.2s ease-in-out;
                 }
 
-            .lenyiloElem.hide h2 { color: #eee; background-color: #47144d; }
+            .lenyiloElem.cast.hide h2 { color: #eee; background-color: #47144d; }
+            .lenyiloElem.crew.hide h2 { color: #eee; background-color: #ff6600; }
 
             .lenyiloElem.hide div { 
                 height: 0;
