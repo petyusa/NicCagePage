@@ -78,6 +78,18 @@ h1 {
   right: 20px;
   bottom: 20px;
 }
+#backbutton{
+  background: #d61838;
+  color: #fff;
+ font-weight: bold;
+ padding: 10px 16px;
+ border: none;
+ font-size: 11pt;
+}
+#backbutton:hover{
+  cursor: pointer;
+  background: #b1132e;
+}
 
 @media screen and (max-width: 1200px) {
 
