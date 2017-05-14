@@ -149,6 +149,7 @@ function getArrayElements(dataType) {
 
 // Add 'go back' button
 var backBtn = document.createElement('button');
+backBtn.id = 'backbutton';
 backBtn.innerHTML = 'Vissza az előző oldalra';
 backBtn.addEventListener('click', goBack);
 backDiv.appendChild(backBtn);
