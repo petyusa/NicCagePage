@@ -32,6 +32,10 @@ function search(film){ //találat lista szűrése
 		else if (film.credits.cast[i].name.toLowerCase().indexOf(filter) !== -1) return true; //találat színészek között
 	}
 	
+	for (var i = 0; i< film.credits.crew.length; ++i){
+		if (film.credits.crew[i].job == "Director" && film.credits.crew[i].name.toLowerCase().indexOf(filter) !== -1) return true; //találat a rendező nevében
+	}
+	
 	return false; //nincs találat
 }
 
