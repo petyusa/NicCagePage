@@ -6,7 +6,7 @@
 
             #mainContainer{
                 width: 88%;
-                margin: 9vw auto;
+                margin: calc(8vw + 75px) auto;
             }
 
             .lenyiloElem h2 { 
@@ -62,8 +62,27 @@
                 background: #b1132e;
              }
 			 
+			 #txtSearch{
+				 display: block;
+				 float: right;
+				width: 180px;
+				 margin-right: 10px;
+                background: #eeeeee;
+                color: black;
+                font-weight: bold;
+                padding: 11px 16px;
+                cursor: pointer;
+				user-select: none;
+				border: 2px solid #00a000;
+			 }
+			 #txtSearch:focus{
+                border-color: #008b00;
+             }
              .keresesGomb{
+				 display: block;
+				 float: right;
 				 display: inline-block;
+				 margin-right: 6%;
 				 min-width: 20px;
                 background: #00a000;
                 color: #fff;
@@ -93,7 +112,7 @@
              }
              header{
                 width: 100%;
-                height: 20vw;
+                height: calc(20vw + 15px);
              }
              header img{
                   width: 100%;
