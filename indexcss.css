@@ -63,6 +63,7 @@
              }
 			 
 			 #txtSearch{
+				 outline:none;
 				 display: block;
 				 float: right;
 				width: 180px;
